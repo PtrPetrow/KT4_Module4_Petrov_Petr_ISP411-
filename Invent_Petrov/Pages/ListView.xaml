@@ -9,12 +9,16 @@
       Title="ИС по прокату спортивного инвентаря" Height="600" Width="1000"
       MinHeight="600" MinWidth="1000">
 
-    <Grid Background="White">
-        <ListViewItem>
-            <TextBlock Text="Фио" VerticalAlignment="Center"
-                       HorizontalAlignment="Right" FontSize="25">
-
-            </TextBlock>
-        </ListViewItem>
-    </Grid>
+    <Grid>
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="3" Orientation="Horizontal">
+                <Button  x:Name="EditButton" Content="Редактировать" 
+                             Height="80" Width="100" Margin="30"></Button>
+                <Button x:Name="DobButton" Content="Добавить" 
+                             Height="80" Width="100" Margin="30"></Button>
+            </StackPanel>
+        </Grid>
 </Page>

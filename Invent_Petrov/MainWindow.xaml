@@ -15,12 +15,14 @@
         <Grid Grid.Row="0" Background="LightGreen">
             <Image Source="/Resourses/logo.png" HorizontalAlignment="Left" 
                VerticalAlignment="Center"/>
-            <TextBlock Text="Спортивный Инвентарь" FontSize="35"
-            VerticalAlignment="Center" HorizontalAlignment="Center">
-            </TextBlock>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Спортивный Инвентарь" FontSize="35">
+                </TextBlock>
+            </Label>
         </Grid>
 
-        <Grid x:Name="MainFrame" Grid.Row="1">
-        </Grid>
+        <Grid>
+            <Frame x:Name="MainFrame" Grid.Row="1"
+             NavigationUIVisibility="Hidden"></Frame></Grid>
     </Grid>
 </Window>

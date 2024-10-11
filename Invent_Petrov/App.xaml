@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:Invent_Petrov"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Comic sans MS"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

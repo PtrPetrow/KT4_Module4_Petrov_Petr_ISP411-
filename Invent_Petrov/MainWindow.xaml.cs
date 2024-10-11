@@ -23,6 +23,8 @@ namespace Invent_Petrov
         public MainWindow()
         {
             InitializeComponent();
+            Classes.Manager.ActiveFrame = MainFrame;
+            Classes.Manager.ActiveFrame.Navigate(new Pages.ListView());
         }
     }
 }
